@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang=""en>
+    <head>
+        <title>Tugas input nama, nilai_uts, nilai_uas, nilai_akhir</title>
+    </head>
+        <body>
+            <p>
+            <script>
+                var nama = prompt("Masukkan Nama");
+                document.write("<p>SELAMAT DATANG " +nama +"</p>");
+                var nilai_tugas = prompt("Masukkan Nilai Tugas");
+                var nilai_uts = prompt("Masukkan Nilai UTS");
+                var nilai_uas = prompt("Masukkan Nilai UAS");
+                var nilai_akhir = prompt(0.3*nilai_tugas)+(0.3*nilai_uts)+(0.4*nilai_uas);
+            </script>
+
+            if(nilai_akhir>=60){
+             keterangan="LULUS"
+            }
+            else {
+            keterangan="GAGAL, Silahkan Coba Lagi"
+            }
+
+            <script>
+                document.write("Nama        : "+nama+"<br>");
+                document.write("Nilai Tugas : "+nilai_tugas+"<br>");
+                document.write("Nilai UTS   : "+nilai_uts+"<br>");
+                document.write("Nilai UAS   : "+nilai_uas+"<br>");
+                document.write("Nilai Akhir   : "+nilai_akhir+"<br>");
+            </script>
+            </p>
+        </body>
+</html>
